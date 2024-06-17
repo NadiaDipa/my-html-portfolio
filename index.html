@@ -4,7 +4,19 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <title>Html Portfolio Assignment</title>
+
+  <style>
+    /* google font */
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+    body {
+      font-family: "Poppins", sans-serif;
+    }
+  </style>
 </head>
 
 <body>
@@ -74,30 +86,50 @@
           <tbody>
             <tr>
               <td>HTML</td>
-              <td>Intermediate</td>
+              <td rowspan="2">Intermediate</td>
             </tr>
             <tr>
               <td>CSS</td>
-              <td>Intermediate</td>
+
             </tr>
             <tr>
               <td>JAVASCRIPT</td>
-              <td>Beginner</td>
+              <td rowspan="3">Beginner</td>
             </tr>
             <tr>
               <td>REACT JS</td>
-              <td>Beginner</td>
+
             </tr>
             <tr>
               <td>NEXT JS</td>
-              <td>Beginner</td>
+
             </tr>
 
           </tbody>
         </table>
+
+
+        <!-- progress bar -->
+        <div>
+          <h3>Skill Progress</h3>
+          <div>
+            <label for="htmlprogress">HTML:</label>
+            <progress id="htmlprogress" value="90" max="100">90%</progress>
+          </div>
+  
+          <div>
+            <label for="cssprogress">CSS:</label>
+            <progress id="cssprogress" value="80" max="100">80%</progress>
+          </div>
+  
+          <div>
+            <label for="jsprogress">JS:</label>
+            <progress id="jsprogress" value="60" max="100">60%</progress>
+          </div>
+        </div>
         <br>
         <div>
-          <h3>Additional Skills</h3>
+          <h3>Expertise</h3>
           <ul type="circle">
             <li>Bootstrap</li>
             <li>Tailwind Css</li>
@@ -105,6 +137,14 @@
             <li>Github</li>
             <li>Figma</li>
           </ul>
+        </div>
+
+
+        <div>
+          <h3>Experience Level</h3>
+          <label for="experienceLevel">Experience</label>
+          <meter value="3" min="0" max="10" id="experienceLevel">3 Years</meter>
+
         </div>
       </div>
     </section>
@@ -169,11 +209,39 @@
 
     <section id="contact-me">
       <h2><u>CONTACT ME</u></h2>
-      <form>
+      <form action="https://formspree.io/f/mayrrklk" method="POST">
         <label for="name">Name:</label><br>
-        <input type="text" id="name" name="name" value=""><br><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+
         <label for="email">Email:</label><br>
-        <input type="text" id="email" name="email" value=""><br><br>
+        <input type="text" id="email" name="email" required><br><br>
+
+
+        <label for="age">Age:</label><br>
+        <input type="number" id="age" name="age" min="18" max="60" required><br><br>
+
+        <div>
+          <label for="website">Website: </label>
+          <input type="url" id="website" name="website" pattern="http?://.+">
+        </div>
+
+
+        <div>
+          <label for="image">Upload Image: </label>
+          <input type="file" id="image" name="image" accept="image/*">
+        </div>
+
+
+        <div>
+          <label for="subject">Subject:</label>
+          <select name="subject" id="subject">
+            <option value="inquiry">Inquiry</option>
+            <option value="feedback">Feedback</option>
+            <option value="job">Job Opportunity</option>
+          </select>
+
+        </div>
 
         <label for="message">Message:</label><br>
         <textarea name="message" id="message" rows="10" cols="21"></textarea>
@@ -188,8 +256,24 @@
 
     </section>
 
+
+    <section>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58403.62426370461!2d90.32108104309022!3d23.810542905835955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c0c1c61277db%3A0xc7d18838730e2e59!2sMirpur%2C%20Dhaka!5e0!3m2!1sen!2sbd!4v1718638096380!5m2!1sen!2sbd"
+        width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
     <!--Section: footer -->
     <footer>
+      <div>
+        <p>Follow Me</p>
+        <ul>
+          <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+          <li><a href=""><i class="fa-brands fa-linkedin"></i></a></li>
+          <li><a href=""><i class="fa-brands fa-github"></i></a></li>
+        </ul>
+      </div>
       <p>Copyright &copy; 2024 || Nadia Dipa</p>
     </footer>
 
