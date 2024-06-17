@@ -16,6 +16,12 @@
     body {
       font-family: "Poppins", sans-serif;
     }
+
+    a{
+      color: rgb(5, 5,5);
+      margin: 0.5rem;
+      font-size: 24px;
+    }
   </style>
 </head>
 
@@ -42,7 +48,7 @@
       <h1>This is Nadia Islam Dipa</h1>
       <i>Front End Developer and Student of CSE Department</i>
       <div>
-        <img height="250px" width="250px" src="./img/profile.jpg" alt="" />
+        <img height="250px" width="250px" src="./img/profile.jpg" alt="profile-img" />
       </div>
       <hr />
     </div>
@@ -116,12 +122,12 @@
             <label for="htmlprogress">HTML:</label>
             <progress id="htmlprogress" value="90" max="100">90%</progress>
           </div>
-  
+
           <div>
             <label for="cssprogress">CSS:</label>
             <progress id="cssprogress" value="80" max="100">80%</progress>
           </div>
-  
+
           <div>
             <label for="jsprogress">JS:</label>
             <progress id="jsprogress" value="60" max="100">60%</progress>
@@ -149,63 +155,42 @@
       </div>
     </section>
 
-    <br>
-    <br>
-    <br>
-
     <section id="my-projects">
       <div>
         <h2><u>MY PROJECTS</u></h2>
         <ol>
-          <div>
-            <li><a target="_blank" href="https://nadiadipa.github.io/food-hub/">Food's Website</a>
-              <p>This is a food delivery website, where users can browse a variety of cuisines, place orders for their
-                favorite dishes. </p>
-              <strong>Technology: Html, CSS</strong>
-              <br>
-              <br>
-              <img height="300px" width="550px" src="./img/projects/project-1.png" alt="">
-            </li>
-          </div>
-          <br>
-          <br>
-          <br>
-          <br>
-          <div>
-            <li><a target="_blank" href="https://health-firebase-authentication.web.app/">Medical Website </a>
-              <p>This is a medical campaign website, where users can find information about upcoming health campaigns,
-                register for free medical check-ups, and access resources on various health topics. </p>
-              <strong>Technology: Html, CSS</strong>
-              <br>
-              <br>
-              <img height="300px" width="550px" src="./img/projects/project-2.png" alt="">
-            </li>
 
-            </li>
-          </div>
-          <br>
-          <br>
-          <br>
-          <br>
+          <li><a target="_blank" href="https://nadiadipa.github.io/food-hub/">Food's Website</a>
+            <p>This is a food delivery website, where users can browse a variety of cuisines, place orders for their
+              favorite dishes. </p>
+            <strong>Technology: Html, CSS</strong>
+            <br>
+            <br>
+            <img height="300px" width="550px" src="./img/projects/project-1.png" alt="project-1-image">
+          </li>
 
-          <div>
-            <li><a target="_blank" href="https://nadiadipa.github.io/honda-cbr-bootstrap/">Honda Website </a>
-              <p>This is a Honda website, where visitors can explore the latest models of cars, motorcycles, and power
-                equipment offered by Honda.</p>
-              <strong>Technology: Html, CSS</strong>
-              <br>
-              <br>
-              <img height="300px" width="550px" src="./img/projects/project-3.png" alt="">
+          <li><a target="_blank" href="https://health-firebase-authentication.web.app/">Medical Website </a>
+            <p>This is a medical campaign website, where users can find information about upcoming health campaigns,
+              register for free medical check-ups, and access resources on various health topics. </p>
+            <strong>Technology: Html, CSS</strong>
+            <br>
+            <br>
+            <img height="300px" width="550px" src="./img/projects/project-2.png" alt="project-2-image">
+          </li>
 
-            </li>
-          </div>
+          <li><a target="_blank" href="https://nadiadipa.github.io/honda-cbr-bootstrap/">Honda Website </a>
+            <p>This is a Honda website, where visitors can explore the latest models of cars, motorcycles, and power
+              equipment offered by Honda.</p>
+            <strong>Technology: Html, CSS</strong>
+            <br>
+            <br>
+            <img height="300px" width="550px" src="./img/projects/project-3.png" alt="project-3-image">
+
+          </li>
+
         </ol>
       </div>
     </section>
-    <br>
-    <br>
-    <br>
-
 
     <section id="contact-me">
       <h2><u>CONTACT ME</u></h2>
@@ -250,10 +235,6 @@
         <input type="submit" value="Submit">
         <button type="reset">Clear</button>
       </form>
-
-      <br>
-
-
     </section>
 
 
@@ -261,7 +242,7 @@
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58403.62426370461!2d90.32108104309022!3d23.810542905835955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c0c1c61277db%3A0xc7d18838730e2e59!2sMirpur%2C%20Dhaka!5e0!3m2!1sen!2sbd!4v1718638096380!5m2!1sen!2sbd"
         width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"></iframe>
+        referrerpolicy="no-referrer-when-downgrade" title="google map location"></iframe>
     </section>
 
     <!--Section: footer -->
@@ -269,15 +250,15 @@
       <div>
         <p>Follow Me</p>
         <ul>
-          <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
-          <li><a href=""><i class="fa-brands fa-linkedin"></i></a></li>
-          <li><a href=""><i class="fa-brands fa-github"></i></a></li>
+          <li><a href="" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a></li>
+          <li><a href="" aria-label="Linkedin"><i class="fa-brands fa-linkedin"></i></a></li>
+          <li><a href="" aria-label="Github"><i class="fa-brands fa-github"></i></a></li>
         </ul>
       </div>
       <p>Copyright &copy; 2024 || Nadia Dipa</p>
     </footer>
 
-    </section>
+
   </main>
 </body>
 
